@@ -1,0 +1,271 @@
+/*---------------- Start Product Comment Block Css -------------------*/
+
+.star {
+	cursor: pointer;
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+	margin: 0 -2px;
+    font-size: 14px;
+    line-height: normal;
+}
+.star a {
+    display: none;
+}
+.star::after {
+    content: "\E838";
+    font-family: "Material Icons";
+    color: #d9d9d9;
+}
+.star_on::after {
+	content: "\E838";
+	font-family: "Material Icons";
+	color: #f6d000;
+}
+.star_hover::after {
+	color: #f6d000;
+    content: "\E838";
+    font-family: "Material Icons";
+}
+#id_new_comment_form {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+#wdcomment-modal .modal-dialog {
+    max-width: 700px;
+}
+#wdcomment-modal .modal-dialog .modal-header h2 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #111111;
+	font-weight: 500;
+}
+#wdcomment-modal .modal-dialog .modal-body .product .product_desc {
+    line-height: 18px;
+    color: #808080;
+}
+#wdcomment-modal .modal-dialog .modal-body .product .product_desc .product_name {
+    padding: 10px 0 5px;
+    color: #111111;
+    margin: 0;
+}
+#wdcomment-modal .modal-dialog .modal-body #criterions_list {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+#wdcomment-modal .modal-dialog .modal-body #criterions_list li {
+    margin-bottom: 10px;
+}
+#wdcomment-modal .modal-dialog .modal-body #criterions_list label {
+    float: left;
+    margin: 0 10px 0 0;
+    min-width: 100px;
+    text-align: left;
+	font-weight: 500;
+	color: #111;
+}
+#wdcomment-modal .modal-dialog .modal-body .form-control-label {
+	font-weight: 500;
+	color: #111;
+}
+#wdcomment-modal .modal-dialog .modal-body #criterions_list .star_content {
+    float: left;
+}
+#wdcomment-modal .modal-dialog .modal-footer {
+    text-align: center;
+}
+#wdcomment-modal .modal-dialog .modal-footer button {
+    margin: 0 5px;
+}
+#product_comments_block_tab .comment_helpful button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+}
+#product_comments_block_tab .comment_helpful .usefulness_btn.usefull::before {
+    content: "\E8DC";
+    font-family: "Material Icons";
+    vertical-align: middle;
+}
+#product_comments_block_tab .comment_helpful .usefulness_btn.notusefull::before {
+    content: "\E8DB";
+    font-family: "Material Icons";
+    vertical-align: middle;
+}
+#product_comments_block_tab .comment_helpful .usefulness_btn.usefull:hover {
+    color: #008000;
+}
+#product_comments_block_tab .comment_helpful .usefulness_btn.notusefull:hover {
+    color: #ff0000;
+}
+#product_comments_block_tab .report_btn {
+    cursor: pointer;
+    float: right;
+}
+#product_comments_block_tab .comment_helpful {
+    float: left;
+}
+#product-comment .comment .comment_details > ul {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+#product_comments_block_tab .report_btn:hover {
+    text-decoration: underline;
+    color: #111111;
+}
+#product-comment #new_comment_tab_btn {
+    white-space: normal;
+}
+#product_comments_block_tab .wd-title {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 10px;
+}
+#product_comments_block_tab .comments .align_center {
+	margin: 0;
+}
+#product_comments_block_tab .comments {
+	float: left;
+	width: 100%;
+	padding: 15px 0 0;
+}
+#product-comment {
+    float: left;
+    width: 100%;
+	margin:0 0 70px;
+}
+#wdcomment-modal .product img {
+	max-width: 100%;
+	border: 1px solid var(--border-color);
+}
+#product_comments_block_tab .comment_details .title_block {
+    color: #111;
+}
+#product_comments_block_tab .comment_author_infos strong {
+    color: #111;
+}
+#product_comments_block_tab .btn i {
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+}
+#product_comments_block_tab .customNavigation {
+    float: right;
+    width: auto;
+}
+.comments_advices i {
+    font-size: 16px;
+    line-height: normal;
+    vertical-align: middle;
+}
+#product_comments_block_tab .comment {
+    padding: 30px 0;
+    float: left;
+    width: 100%;
+}
+#product_comments_block_tab  .star-author {
+    float: left;
+    width: 100%;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0 0 20px;
+}
+#product_comments_block_tab .star_content.clearfix {
+    float: left;
+}
+#product_comments_block_tab .comment:last-child{
+	border:none;
+}
+.load-more{
+    float: right;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 15px 0 0;
+}
+.load-more .btn-primary {
+    display: inline-block;
+}
+#product_comments_block_extra {
+	margin: 0 0 10px;
+	text-align: left;
+	float:left;
+	width:100%;
+}
+#product_comments_block_extra .comments_note {
+    border-right: 1px solid #cccccc;
+    display: inline-block;
+    float: none;
+    padding: 0 10px 0 0;
+    vertical-align: top;
+}
+#product_comments_block_extra .comments_advices {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+#product_comments_block_extra .comments_advices a {
+    border-right: 1px solid #cccccc;
+    float: left;
+    padding: 0 10px
+}
+#product_comments_block_extra .comments_advices a:last-child {
+    border: medium none;
+}
+#new_comment_form_error.error {
+  float: left;
+  width: 100%;
+}
+#new_comment_form_error > ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#new_comment_form_error li {
+  color: #a94442;
+  font-size:13px;
+}
+@media (max-width:1199px) {
+#product_comments_block_extra .comments_advices a {
+	padding: 0 5px;
+}
+#product_comments_block_extra .comments_note {
+	padding: 0 5px 0 0;
+}
+}
+@media (max-width:991px) {
+#product_comments_block_extra .comments_advices a.reviews {
+    padding-left: 0;
+}
+
+}
+@media (max-width: 543px) {
+    #product_comments_block_extra .comments_advices {
+        float: left;
+        width: 100%;
+    }
+    .comments_advices .reviews {
+
+        float: left;
+        margin: 0 0 5px;
+        width: 100%;
+    }
+    #product_comments_block_extra .comments_note {
+        border-right: none;
+        padding: 0;
+        margin: 0 0 5px;
+    }
+    #product_comments_block_extra .comments_advices a {
+        border-right: none;
+        padding: 0;
+    }
+}
+/*---------------- End Product Comment Block Css -------------------*/

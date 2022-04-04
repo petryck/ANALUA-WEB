@@ -1,0 +1,203 @@
+#wd_cookie_message {
+    padding: 15px 0;
+    background: #f5f5f5;
+    text-align: center;
+    float: right;
+    width: 100%;
+    z-index: 2;
+}
+#wd_cookie_message button {
+	font-size: 12px;
+	padding: 10px 20px;
+	line-height: 1;
+	font-weight: 400;
+	border: none;
+	background: var(--primary-btn-bg-color);
+	color: var(--primary-btn-color);
+	margin-right: 10px;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	overflow: hidden;
+	border-radius: 25px;
+}
+#wd_cookie_message button:hover{
+	color:var(--secondary-btn-color);
+}
+#wd_cookie_message button:active,
+#wd_cookie_message button:focus{
+    background: var(--secondary-btn-bg-color);
+    color:var(--secondary-btn-color);
+}
+#wd_cookie_message button:hover::after{
+    height: 100%;
+}
+#wd_cookie_message button::after {
+    content: '';
+    position: absolute;
+    background: var(--secondary-btn-bg-color);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    height: 0;
+}
+.cookie_style2 #wd_cookie_message {
+    padding: 30px;
+    background: #ffffff;
+    position: fixed;
+    float: none;
+    display: inline-block;
+    bottom: 10px;
+    width: 400px;
+	right:10px;
+	box-shadow:0 2px 15px rgba(0,0,0,.2);
+}
+.cookie_style2 .wd-cookie-inner {
+    text-align: right;
+}
+.cookie_style2 .wd-cookie-inner > span {
+    font-size: 15px;
+    line-height: 22px;
+    float: right;
+    width: 100%;
+    margin: 0 0 15px;
+}
+.cookie_style2 #wd_cookie_message button{
+	margin:0;
+}
+.cookie_style3 #wd_cookie_message {
+    background: rgba(0,0,0,0.95);
+    position: fixed;
+    float: none;
+    display: inline-block;
+    bottom: 10px;
+    width: 400px;
+    left: 100px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+    padding:0;
+}
+.cookie_style3 #wd_cookie_message button {
+    float: right;
+    width: 100%;
+	background: var(--secondary-btn-bg-color);
+	color: var(--secondary-btn-color);
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-khtml-border-radius: 0 0 10px 10px;
+	margin:0;
+}
+.cookie_style3 #wd_cookie_message button::after{
+	background: var(--primary-btn-bg-color);
+	opacity:0.5;
+}
+.cookie_style3 #wd_cookie_message button:hover{
+	color: var(--primary-btn-color);
+}
+.cookie_style3 .wd-cookie-inner > span {
+    padding: 10px;
+    float: right;
+    width: 100%;
+}
+.cookie_style3 .wd-cookie-inner > span a:hover{
+	color:#ffffff;
+}
+.cookie_style3 .wd-cookie-inner > span {
+    font-size: 15px;
+    line-height: 30px;
+    float: right;
+    width: 100%;
+    margin:0;
+    color: #cccccc;
+	padding:20px 30px;
+}
+.cookie_style4 #wd_cookie_message {
+    padding: 15px;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    float: right;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.cookie_style4 #wd_cookie_message .wd-cookie-inner > span {
+    float: right;
+	color:#ffffff;
+	padding:8px 0;
+}
+.cookie_style4 .wd-cookie-inner > span a:hover{
+	color:#ffffff;
+}
+.cookie_style4 #wd_cookie_message button{
+	float:left;
+	background: #fff;
+	color: #111;
+}
+.cookie_style4 #wd_cookie_message button:hover {
+    color: var(--secondary-btn-color);
+}
+.cookie_style4 .tt-global-inner.container {
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+.cookie_style1 #wd_cookie_message .wd-cookie-inner > span {
+    padding: 0 0 10px;
+    float: right;
+    width: 100%;
+	line-height:20px;
+}
+.cookie_style4 #wd_cookie_message .wd-cookie-inner > span {
+    padding: 0 0 10px;
+    float: right;
+    width: 100%;
+	line-height:20px;
+}
+.cookie_style4 #wd_cookie_message button {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+}
+@media (max-width:543px) {
+.cookie_style2 #wd_cookie_message {
+    padding: 15px;
+    width: 290px;
+}
+.cookie_style2 .tt-global-inner.container,
+.cookie_style3 .tt-global-inner.container{
+	padding:0;
+}
+.cookie_style2 .wd-cookie-inner > span,
+.cookie_style3 .wd-cookie-inner > span{
+	line-height:24px;
+}
+.cookie_style3 .wd-cookie-inner > span{
+	padding:0 0 10px;
+}
+.cookie_style3 #wd_cookie_message {
+    padding: 15px;
+    width: 290px;
+}
+.cookie_style3 #wd_cookie_message{
+	right:10px;
+	left:10px;
+}
+}

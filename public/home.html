@@ -1,109 +1,990 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-   
-
-    <title>ANALUA</title>
-</head>
-<body>
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-    
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Inico</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Lançamentos</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Quem somos</a></li>
-          </ul>
-    
-          <div class="col-md-3 text-end">
-            <!-- Icons -->
-      <ul class="navbar-nav d-flex flex-row me-1">
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
-          </div>
-        </header>
+<html lang="en" style="transform: none;">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Demo Store</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+      <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico?1629968937">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico?1629968937">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/theme.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/blockreassurance/views/dist/front.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcompare/views/css/wdcompare.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdproductwishlist/views/css/wdproductwishlist.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcookie/views/css/wdcookie.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/smartbloghomelatestnews/views/css/smartbloghomelatestnews.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdspecials/views/css/wdspecials.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdproductcomments/views/css/wdproductcomments.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcategoryfeature/views/css/wdcategoryfeature.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdpopupnewsletter/views/css/wdpopupnewsletter.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmstopbanner/views/css/wdcmstopbanner.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdbrandlogo/views/css/wdbrandlogo.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmsservices/views/css/wdcmsservices.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmsparallax/views/css/wdcmsparallax.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmsrightbanner/views/css/wdcmsrightbanner.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmsrightservices/views/css/wdcmsrightservices.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdcmsoffer/views/css/wdcmsoffer.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdproductcountdown/views/css/themes/1-simple.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdhorizontalmenu/views/css/front.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/ps_imageslider/css/homeslider.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/modules/wdimageslider/views/css/flexslider.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/lightbox.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/owl.carousel.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/owl.theme.default.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/animate.css" type="text/css" media="all">
+      <link rel="stylesheet" href="assets/themes/WDGTM015_style/assets/css/custom.css" type="text/css" media="all">
+      <script>
+         var added_to_wishlist = "The product was successfully added to your wishlist.";
+         var baseDir = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/";
+         var comparator_max_item = 3;
+         var compareAdd = "The product has been added to product comparison";
+         var compareRemove = "The product has been removed from the product comparison.";
+         var compareUrl = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?fc=module&module=wdcompare&controller=compare&id_lang=1";
+         var compareView = "Compare";
+         var comparedProductsIds = [];
+         var compared_products = [];
+         var disable_comment = "Criterion is not exists for this product.";
+         var isLogged = 0;
+         var isLoggedWishlist = false;
+         var loggin_required = "You must be logged in to manage your wishlist.";
+         var loginLabel = "Login";
+         var login_url = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=my-account";
+         var max_item = "You cannot add more than 3 product(s) to the product comparison";
+         var moderation_active = 1;
+         var mywishlist_url = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?fc=module&module=wdproductwishlist&controller=mywishlist&id_lang=1";
+         var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":""},"tax":{"type":"tax","label":"Taxes","amount":0,"value":"$0.00"}},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":0,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"US Dollar","iso_code":"USD","iso_code_num":"840","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"m\/d\/Y","date_format_full":"m\/d\/Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Demo Store","description":"","keywords":"","robots":"index"},"page_name":"index","body_classes":{"lang-en":true,"lang-rtl":false,"country-US":true,"currency-USD":true,"layout-full-width":true,"page-index":true,"tax-display-disabled":true},"admin_notifications":[]},"shop":{"name":"Demo Store","logo":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/demo-store-logo-1629968937.png","stores_icon":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/logo_stores.png","favicon":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/","current_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php","shop_domain_url":"https:\/\/prestashop.webdigify.com","img_ps_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/","img_cat_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/c\/","img_lang_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/l\/","img_prod_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/","img_manu_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/m\/","img_sup_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/su\/","img_ship_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/s\/","img_store_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/st\/","img_col_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/co\/","img_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/themes\/WDGTM015_style\/assets\/img\/","css_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/themes\/WDGTM015_style\/assets\/css\/","js_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/themes\/WDGTM015_style\/assets\/js\/","pic_url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/upload\/","pages":{"address":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=address","addresses":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=addresses","authentication":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=authentication","cart":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=cart","category":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=category","cms":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=cms","contact":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=contact","discount":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=discount","guest_tracking":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=guest-tracking","history":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=history","identity":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=identity","index":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php","my_account":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=my-account","order_confirmation":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order-confirmation","order_detail":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order-detail","order_follow":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order-follow","order":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order","order_return":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order-return","order_slip":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order-slip","pagenotfound":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=pagenotfound","password":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=password","pdf_invoice":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=prices-drop","product":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=product","search":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=search","sitemap":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=sitemap","stores":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=stores","supplier":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=supplier","register":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=authentication&create_account=1","order_login":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?controller=order&login=1"},"alternative_langs":{"en-us":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=1","ar-sa":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=42","es-es":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=48","de-de":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=49","pl-pl":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=50","fr-fr":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=51","it-it":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?id_lang=52"},"theme_assets":"\/WDGTM\/WDGTM015_style\/themes\/WDGTM015_style\/assets\/","actions":{"logout":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-small_default.jpg","width":70,"height":91},"cart_default":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-cart_default.jpg","width":100,"height":130},"home_default":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-home_default.jpg","width":300,"height":390},"medium_default":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-medium_default.jpg","width":505,"height":657},"large_default":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-large_default.jpg","width":870,"height":1131}},"small":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-small_default.jpg","width":70,"height":91},"medium":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-home_default.jpg","width":300,"height":390},"large":{"url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/img\/p\/en-default-large_default.jpg","width":870,"height":1131},"legend":""}},"configuration":{"display_taxes_label":false,"display_prices_tax_incl":false,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"Unit discount"},"voucher_enabled":0,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1649089399,"static_token":"4fd7e4bef6c83b0d8f6d51cea2f76bac","token":"c2ca31cd1712081656b1afec70a94b9e","debug":false};
+         var productcomment_added = "Thanks for your Review. Your comment has been added!";
+         var productcomment_added_moderation = "Thanks for your Review. It will be available once approved by a moderator.";
+         var productcomments_controller_url = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?fc=module&module=wdproductcomments&controller=default&id_lang=1";
+         var productcomments_url_rewrite = "";
+         var psemailsubscription_subscription = "https:\/\/prestashop.webdigify.com\/WDGTM\/WDGTM015_style\/index.php?fc=module&module=ps_emailsubscription&controller=subscription&id_lang=1";
+         var psr_icon_color = "#252525";
+         var secure_key = "1ea128052b44e4a8db98c400b57f035d";
+         var static_token = "4fd7e4bef6c83b0d8f6d51cea2f76bac";
+         var wishlistProductsIds = "";
+         var wishlistView = "Your Wishlist";
+      </script>
+      <style type="text/css">
+         #product .wdpc-wrp.wdpc_displayProductPriceBlock {
+         display: none !important;
+         }
+         #product .ajax_block_product .wdpc-wrp.wdpc_displayProductPriceBlock,
+         #product .product_list .wdpc-wrp.wdpc_displayProductPriceBlock,
+         #product #product_list .wdpc-wrp.wdpc_displayProductPriceBlock,
+         #product .product-miniature .wdpc-wrp.wdpc_displayProductPriceBlock {
+         display: block !important;
+         }
+      </style>
+      <script type="text/javascript">
+         var wdpc_labels = ['days', 'hours', 'minutes', 'seconds'];
+         var wdpc_labels_lang = {
+             'days': 'days',
+             'hours': 'hours',
+             'minutes': 'min.',
+             'seconds': 'sec.'
+         };
+         var wdpc_labels_lang_1 = {
+             'days': 'day',
+             'hours': 'hour',
+             'minutes': 'min.',
+             'seconds': 'sec.'
+         };
+         var wdpc_offer_txt = "Offer ends in:";
+         var wdpc_theme = "1-simple";
+         var wdpc_psv = 1.7;
+         var wdpc_hide_after_end = 1;
+         var wdpc_hide_expired = 1;
+         var wdpc_highlight = "seconds";
+         var wdpc_position_product = "";
+         var wdpc_position_list = "over_img";
+         var wdpc_adjust_positions = 1;
+         var wdpc_token = "4fd7e4bef6c83b0d8f6d51cea2f76bac";
+      </script>
+      <style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
+   </head>
+   <body id="index" class="lang-en country-us currency-usd layout-full-width page-index tax-display-disabled" style="transform: none;">
+      <main style="transform: none;">
+         <div class="page-inner" style="transform: none;">
+            <header id="header">
+               <div class="header-banner">
+                <nav class="header-nav">
+                  <div class="hidden-sm-down top-nav">
+                  <div class="container">
+                       
+                        <div class="right-nav">
+                
+                                    <div class="nav2">
+                                    
+                                      <div class="top-logo" id="_mobile_logo"></div>
+                                      <div class="float-xs-right" id="_mobile_cart"></div>
+                                      <div class="float-xs-right" id="_mobile_user_info"></div>
+                                      
+            
+                
+                                    </div>
+                
+                          </div>
+                        </div>
+                        </div>
+                  </nav>
+               </div>
+               <div class="full-header">
+                  <div class="position-static">
+                     <div class="container">
+                        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+                           <h1>
+                              <a href="assets/">
+                              <img class="logo img-responsive" src="assets/img/demo-store-logo-1629968937.png" alt="Demo Store" width="118" height="45">
+                              </a>
+                           </h1>
+                        </div>
+                        <div class="container_wd_horizontalmenu col-sm-3">
+                           <div id="wd-menu-horizontal" class="wd-menu-horizontal clearfix">
+                              <div class="title-horizontalmenu-mobile default-open" title="Shop Categories"> 
+                                 <span>Menu</span><i class="material-icons"></i>
+                              </div>
+                              <div class="horizontalmain-menu">
+                                 <ul class="horizontalmenu-content">
+                                  <li class="level-1 ">
+                                    <a href="assets/index.php?id_category=15&amp;controller=category&amp;id_lang=1" class="wdinnermenu">
+                                    <span class="material-icons wd-left-arrow">arrow_forward</span>
+                                    <span class="catagory">ÍNICIO</span>
+                                    </a>
+                                    <span class="icon-drop-mobile"></span>
+                                 </li>
+                                    <li class="level-1 label-success parent">
+                                       <a href="assets/index.php?id_category=50&amp;controller=category&amp;id_lang=1" class="wdinnermenu">
+                                          <span class="material-icons wd-left-arrow">arrow_forward</span>
+                                          <span class="catagory">LANÇAMENTOS</span>
+                                          <div class="menu-subtitle">New</div>
+                                       </a>
+                                       <div class="wd-sub-menu menu-dropdown col-xs-12 col-sm-12 wd-sub-left">
+                                          <div class="container">
+                                             <div class="wd-menu-row row ">
+                                                <div class="wd-menu-col col-xs-12 col-sm-3 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-header  col-xs-12">
+                                                         <a href="assets/index.php?id_category=3&amp;controller=category&amp;id_lang=1" class="submenu-title">Accessories</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=4&amp;controller=category&amp;id_lang=1" class="submenu-title">Stoneware</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=5&amp;controller=category&amp;id_lang=1" class="submenu-title">Stained glass</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=16&amp;controller=category&amp;id_lang=1" class="submenu-title">Tatting</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=17&amp;controller=category&amp;id_lang=1" class="submenu-title">Sewing</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=28&amp;controller=category&amp;id_lang=1" class="submenu-title">Artisan</a>																														
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-3 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-header  col-xs-12">
+                                                         <a href="assets/index.php?id_category=6&amp;controller=category&amp;id_lang=1" class="submenu-title">Footwear</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=7&amp;controller=category&amp;id_lang=1" class="submenu-title">Basket weaving</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=8&amp;controller=category&amp;id_lang=1" class="submenu-title">Crochet</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=18&amp;controller=category&amp;id_lang=1" class="submenu-title">Papercutting</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=19&amp;controller=category&amp;id_lang=1" class="submenu-title">Quilling</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=29&amp;controller=category&amp;id_lang=1" class="submenu-title">Studio Craft</a>																														
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-3 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-header  col-xs-12">
+                                                         <a href="assets/index.php?id_category=9&amp;controller=category&amp;id_lang=1" class="submenu-title">For Kids</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=21&amp;controller=category&amp;id_lang=1" class="submenu-title">Paper model</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=20&amp;controller=category&amp;id_lang=1" class="submenu-title">Calligraphy</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=22&amp;controller=category&amp;id_lang=1" class="submenu-title">Marquetry</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=23&amp;controller=category&amp;id_lang=1" class="submenu-title">Carpentry</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=30&amp;controller=category&amp;id_lang=1" class="submenu-title">Stagecraft</a>																														
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-3 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-header  col-xs-12">
+                                                         <a href="assets/index.php?id_category=14&amp;controller=category&amp;id_lang=1" class="submenu-title">For Women</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=24&amp;controller=category&amp;id_lang=1" class="submenu-title">Intarsia</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=25&amp;controller=category&amp;id_lang=1" class="submenu-title">Stone carving</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=26&amp;controller=category&amp;id_lang=1" class="submenu-title">Farrier</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=27&amp;controller=category&amp;id_lang=1" class="submenu-title">Knife making</a>																														
+                                                      </li>
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <a href="assets/index.php?id_category=31&amp;controller=category&amp;id_lang=1" class="submenu-title">Coppersmith</a>																														
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-4 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <div class="html-block">
+                                                            <div class="wdbanner-img1 wdbanner"><a href="#"><img src="img/cms/menu-01.jpg" alt=""></a></div>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-4 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <div class="html-block">
+                                                            <div class="wdbanner-img2 wdbanner"><a href="#"><img src="img/cms/menu-02.jpg" alt=""></a></div>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="wd-menu-col col-xs-12 col-sm-4 ">
+                                                   <ul class="ul-column ">
+                                                      <li class="menu-item  item-line  col-xs-12">
+                                                         <div class="html-block">
+                                                            <div class="wdbanner-img3 wdbanner"><a href="#"><img src="img/cms/menu-03.jpg" alt=""></a></div>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                
+                                    <li class="level-1 ">
+                                       <a href="assets/index.php?id_category=28&amp;controller=category&amp;id_lang=1" class="wdinnermenu">
+                                       <span class="material-icons wd-left-arrow">arrow_forward</span>
+                                       <span class="catagory">QUEM SOMOS</span>
+                                       </a>
+                                       <span class="icon-drop-mobile"></span>
+                                    </li>
+                                 
+                                 </ul>
+                                 <div class="js-top-menu-bottom">
+                                    <div id="_mobile_currency_selector"></div>
+                                    <div id="_mobile_language_selector"></div>
+                                    <div id="_mobile_contact_link"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Module Horizontalmenu-->
+                        <!-- /Module Horizontalmenu -->
+                        <script>
+                           /* ---------------- start link more menu ----------------------*/
+                           		var max_horizontallink = 6;
+                           		var more_info = "More";
+                           		var items = $('#wd-menu-horizontal .horizontalmenu-content > li');
+                           		var surplus = items.slice(max_horizontallink, items.length);
+                           		surplus.wrapAll('<li class="horizontalmore_menu wdmenu level-1"><div class="wd-sub-menu menu-dropdown clearfix">');
+                           		$('.horizontalmore_menu').prepend('<a href="#" class="level-top"><span class="category">'+more_info+'</span></a>');
+                           		$('.horizontalmore_menu').mouseover(function(){
+                           		$(this).children('div').addClass('shown-link');
+                           		})
+                           		$('.horizontalmore_menu').mouseout(function(){
+                           		$(this).children('div').removeClass('shown-link');
+                           		});
+                           			$( ".wd-menu-horizontal ul li .menu-dropdown.cat-drop-menu" ).parent().addClass( "cat-dropmenu" );
+                           	/* ---------------- End  link more menu ----------------------*/
+                        </script>
+                        <div id="_desktop_cart">
+                           <div class="blockcart cart-preview dropdown js-dropdown inactive" data-refresh-url="//prestashop.webdigify.com/WDGTM/WDGTM015_style/index.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">
+                              <div class="header" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="button">
+                                 <span class="shopping" title="Checkout">
+                                 <span class="wdicon"><i class="material-icons-outlined shopping-cart">shopping_cart</i></span>
+                                 <span class="wdcontent">
+                                 <span class="hidden-sm-down">Checkout</span>
+                                 <span class="cart-products-count"><span class="cart-counter">0</span><span class="cart-count">item :</span></span>
+                                 <span class="wdamount pull-right">
+                                 $0.00
+                                 </span>
+                                 </span>
+                                 </span>
+                              </div>
+                              <div class="cart_block block exclusive">
+                                 <div class="block_content">
+                                    <div class="cart_block_list">
+                                       <p class="no-item">
+                                          No products in the cart.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="_desktop_user_info">
+                           <div class="wduserheading " title="My Account"><span class="myaccount">My Account</span></div>
+                           <ul class="user-info">
+                              <li><a href="assets/index.php?controller=my-account" title="Log in to your customer account" rel="nofollow">
+                                 <i class="material-icons user"></i>
+                                 <span class="hidden-sm-down">Sign in</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     
+                       
+                        <!-- Block search module TOP -->
+                    
+                        <!-- /Block search module TOP -->
+                      
+                        
+                     </div>
+                  </div>
+                  <div class="header-top">
+                     <div class="container">
+                        <div class="clearfix"></div>
+                        <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
+                           <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="main-breadcrumb">
+               <div class="container">
+                  <nav data-depth="1" class="breadcrumb hidden-sm-down">
+                     <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li>
+                           <span>Home</span>
+                        </li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+            <div id="page" class="" style="transform: none;">
+               <div class="wdloading-bg" style="display: none;"></div>
+               <div id="top_column_before">
+               </div>
+               <div id="top_column">
+                  <div id="wd_category_feature" class="wd_category_feature">
+                     <div class="container">
+                        <div class="wd-titletab">
+                           <h3 class="wd-title"><span>Browse Categories</span></h3>
+                        </div>
+                        <div class="list_carousel row responsive clearfix">
+                           <div id="wd_cat_featured" class="product-list owl-loaded owl-carousel owl-drag">
+                              <div class="owl-stage-outer">
+                                 <div class="owl-stage" style="transform: translate3d(-1960px, 0px, 0px); transition: all 0.7s ease 0s; width: 4410px;">
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/img/260888.jpg" title="Fashion">
+                                                   <img src="assets/img/c/50_thumb.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/img/260888.jpg" class="btn-pattern">
+                                                          CROPPED
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=50&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=3&amp;controller=category&amp;id_lang=1" title="Accessories">
+                                                   <img  src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=3&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          MAX
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=3&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=6&amp;controller=category&amp;id_lang=1" title="Footwear">
+                                                   <img src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=6&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          EXCLUSIVAS
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=6&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content" >
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=9&amp;controller=category&amp;id_lang=1" title="For Kids">
+                                                   <img  src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=9&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          FRASE INGLÊS
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=9&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=14&amp;controller=category&amp;id_lang=1" title="For Women">
+                                                   <img src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=14&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          DESENHOS
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=14&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=15&amp;controller=category&amp;id_lang=1" title="For Men">
+                                                   <img  src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=15&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          FRASE PORTUGUÊS
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=15&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 245px;">
+                                       <div class="item ">
+                                          <div class="content col-sm-12">
+                                             <div class="wd_cat_content">
+                                                <div class="cat-img" style="width: 80px; height: 80px;">
+                                                   <a href="assets/index.php?id_category=50&amp;controller=category&amp;id_lang=1" title="Fashion">
+                                                   <img src="assets/img/260888.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="wdcat-content">
+                                                   <div class="cat-infor">
+                                                      <h4 class="title">
+                                                         <a href="assets/index.php?id_category=50&amp;controller=category&amp;id_lang=1" class="btn-pattern">
+                                                          BASICA
+                                                         </a>
+                                                      </h4>
+                                                   </div>
+                                                   <div class="sub-cat">
+                                                      <li class="cat-more"><a href="assets/index.php?id_category=50&amp;controller=category&amp;id_lang=1"><span class="category-viewall">Ver Mais</span></a></li>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                               
+                                  
+                                 </div>
+                              </div>
+                              <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                              <div class="owl-dots disabled"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="flexslider" data-interval="3500" data-pause="true">
+                     <div class="loadingdiv spinner"></div>
+             
+                     <ol class="flex-control-nav flex-control-paging">
+                        <li><a href="#" class="flex-active">1</a></li>
+                        <li><a href="#" class="">2</a></li>
+                     </ol>
+                     <ul class="flex-direction-nav">
+                        <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li>
+                        <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+                     </ul>
+                  </div>
+                  <div id="wdcmsoffer" class="bottom-to-top hb-animate-element hb-in-viewport">
+                     <div class="container">
+                        <div class="wdcmsoffer">
+                           <!-- <div class="offer-content">
+                              <div class="offer-title">Get Up To <span>60% OFF</span> on our Latest collection</div>
+                              <div class="offer-desc">Hurry..! Biggest offers On this season, Explore Now!</div>
+                           </div>
+                           <div class="offer-btn"><a href="#" class="btn-primary">Explore All</a></div> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <section id="wrapper" style="transform: none;">
+                  <div class="container-fluid" style="transform: none;">
+                     <aside id="notifications">
+                        <div class="container">
+                        </div>
+                     </aside>
+                     <div class="content_wrap" style="transform: none;">
+                        <div id="content-wrapper" class="Cwidth" style="width: 100%; position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                           <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+                              <section id="main">
+                                 <section id="content" class="page-home" style="margin-top: -143px;">
+                                    <!-- <div id="wdcmsparallax">
+                                       <div class="parallex-main">
+                                          <div class="parallex" data-source-url="assets/modules/wdcmsparallax/views/img/parallax-bg.jpg" style="background-image:url('assets/modules/wdcmsparallax/views/img/parallax-bg.jpg'); background-position: 50% 65.8718%;">
+                                             <div class="container">
+                                                <div class="parallax-inner">
+                                                   <div class="parallax-title">Up To <span>35%</span> Off*</div>
+                                                   <div class="parallax-subtitle">Get best Offer - Top of the line Casual wear</div>
+                                                   <div class="parallax-desc">Starting at <span>$59.00 only</span></div>
+                                                   <div class="parallax-btn"><a href="#">shop now</a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div> -->
+                                    <div id="wdcmsservices" class="bottom-to-top hb-animate-element">
+                                       <div class="container">
+                                          <div class="home-sevices">
+                                             <ul class="wd-sevices services-carousel owl-loaded owl-carousel owl-drag">
+                                                <div class="owl-stage-outer">
+                                                   <!-- <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1360px;">
+                                                      <div class="owl-item active" style="width: 340px;">
+                                                         <li>
+                                                            <div class="wd-return wdservice service-info-heading">
+                                                               <div class="service-icon"></div>
+                                                               <div class="wdservice-desc"><span class="service-title">Easy to buy &amp; return</span> <span class="service-desc">Single click to buy &amp; return</span></div>
+                                                            </div>
+                                                         </li>
+                                                      </div>
+                                                      <div class="owl-item active" style="width: 340px;">
+                                                         <li>
+                                                            <div class="wd-secure wdservice service-info-heading">
+                                                               <div class="service-icon"></div>
+                                                               <div class="wdservice-desc"><span class="service-title">Secure Payments</span> <span class="service-desc">100% payment security</span></div>
+                                                            </div>
+                                                         </li>
+                                                      </div>
+                                                      <div class="owl-item active" style="width: 340px;">
+                                                         <li>
+                                                            <div class="wd-support wdservice service-info-heading">
+                                                               <div class="service-icon"></div>
+                                                               <div class="wdservice-desc"><span class="service-title">24x7 Support Available</span> <span class="service-desc">support 24 hours a day</span></div>
+                                                            </div>
+                                                         </li>
+                                                      </div>
+                                                      <div class="owl-item active" style="width: 340px;">
+                                                         <li>
+                                                            <div class="wd-shop wdservice service-info-heading">
+                                                               <div class="service-icon"></div>
+                                                               <div class="wdservice-desc"><span class="service-title">Shop with our App</span> <span class="service-desc">Download app &amp; get offers</span></div>
+                                                            </div>
+                                                         </li>
+                                                      </div>
+                                                   </div> -->
+                                                </div>
+                                                <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="material-icons"></i></button><button type="button" role="presentation" class="owl-next"><i class="material-icons"></i></button></div>
+                                                <div class="owl-dots disabled"></div>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 
+                                    <section class="wdspecial-products bottom-to-top hb-animate-element col-sm-9">
+                                       <div class="container">
+                                          <div class="wdspecial-inner">
+                                             <div class="wd-titletab">
+                                                <h3 class="wd-title"><span>Lançamentos</span></h3>
+                                             </div>
+                                           <!-- lista de produtos -->
+                                             <!-- <div class="customNavigation">
+                                                <a class="btn prev wdspecial_prev">Prev</a>
+                                                <a class="btn next wdspecial_next">Next</a>
+                                             </div> -->
+                                          </div>
+                                       </div>
+                                       <div class="allproduct"><a href="assets/index.php?controller=prices-drop">All sale products</a></div>
+                                    </section>
+                                    <div id="smartblog_block" class="block products_block  clearfix bottom-to-top hb-animate-element">
+                                       <div class="container">
+                                      
+                                       </div>
+                                    </div>
+                                  
+                                 </section>
+                                 <footer class="page-footer">
+                                    <!-- Footer content -->
+                                 </footer>
+                              </section>
+                              <div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                                 <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                                    <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1913px; height: 11px;"></div>
+                                 </div>
+                                 <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                                    <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <footer id="footer">
+                  <div class="footer-top">
+                     <div class="container">
+                        <div class="row">
+                           <div id="newslatter">
+                              <div class="block_newsletter">
+                                 <h3 class="h3 hidden-sm-down col-sm-6">
+                                    <span class="title">
+                                    <span class="material-icons">drafts</span>Inscreva-se para receber novidades
+                                    </span>
+                                  :
+                                 </h3>
+                                 <div class="block_content col-sm-6">
+                                    <form action="assets/index.php#footer" method="post">
+                                       <div class="row">
+                                          <div class="wdinput_newsletter">
+                                             <input class="btn btn-primary float-xs-right hidden-xs-down" name="submitNewsletter" type="submit" value="Eu quero">
+                                             <input class="btn btn-primary float-xs-right hidden-sm-up" name="submitNewsletter" type="submit" value="OK">
+                                             <div class="input-wrapper">
+                                                <input name="email" type="email" value="" placeholder="Seu email" aria-labelledby="block-newsletter-label">
+                                             </div>
+                                             <input type="hidden" name="action" value="0">
+                                             <div class="clearfix"></div>
+                                          </div>
+                                          <div class="news-inner">
+                                             <p class="newsletter-desc">You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer-middle">
+                     <div class="container">
+                     </div>
+                  </div>
+                  <div class="footer-container">
+                     <div class="container bottom-to-top hb-animate-element">
+                        <div class="row">
+                           <div class="social-contact links col-4">
+                              <div class="block-contact contact-rich">
+                                 <h4 class="hidden-sm-down">Endereço</h4>
+                                 <div class="title clearfix hidden-md-up" data-toggle="collapse" data-target="#contact-footer">
+                                    <span class="h3 block-contact-title">Store information</span>
+                                    <span class="float-xs-right">
+                                    <span class="navbar-toggler collapse-icons">
+                                    <i class="material-icons add"></i>
+                                    <i class="material-icons remove"></i>
+                                    </span>
+                                    </span>
+                                 </div>
+                                 <ul id="contact-footer" class="collapse">
+                                    <li class="block">
+                                       <div class="icon"><i class="material-icons"></i></div>
+                                       <div class="data">Somos apenas loja Online</div>
+                                    </li>
+                                 
+                                 </ul>
+                              </div>
+                           </div>
+                           <div id="block_myaccount_infos" class="col-md-3 links">
+                              <h3 class="myaccount-title hidden-sm-down">
+                                 <a class="text-capitalize" href="assets/index.php?controller=my-account" rel="nofollow">
+                                 Email
+                                 </a>
+                              </h3>
+                              <div class="title clearfix hidden-md-up" data-target="#footer_account_list" data-toggle="collapse">
+                             
+                              </div>
+                              <ul class="account-list collapse" id="footer_account_list">
+                                 <li>
+                                  <span class="title"></span> <a href="mailto:suporte@tuaanalua.com" class="dropdown">suporte@tuaanalua.com</a>
+                                 </li>
+                                
+                              </ul>
+                           </div>
+                           <div class="col-md-6 linklist links">
+                              <div class="row">
+                                 <div class="wrapper col-sm-6">
+                                    <h3 class="h3 hidden-sm-down">Precisa de ajuda?</h3>
+                                    <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_43955" data-toggle="collapse">
+                                       <span class="h3">Products</span>
+                                     
+                                    </div>
+                                    <ul id="footer_sub_menu_43955" class="collapse">
+                                       <li>
+                                        <div class="data">
+                                          <span class="title"> </span> <a href="tel:%phone%">+55 47 9 88457844</a>
+                                       </div>
+                                       </li>
+                                     
+                                    </ul>
+                                 </div>
+                                 <div class="wrapper col-sm-6">
+                                    <h3 class="h3 hidden-sm-down">Entrega</h3>
+                                    <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_87144" data-toggle="collapse">
+                                    </div>
+                                    <ul id="footer_sub_menu_87144" class="collapse">
+                                       <li>
+                                          <a id="link-cms-page-1-2" class="cms-page-link" href="assets/index.php?id_cms=1&amp;controller=cms&amp;id_lang=1" title="Our terms and conditions of delivery">
+                                          
+                                          </a>
+                                       </li>
+                                    
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="bottom-footer">
+                     <div class="container">
+                        <div class="wdcontent">
+                           <p>
+                              <a class="_blank" href="assets/">
+                              © 2022 - Loja ANALUA by Petryck William™
+                              </a>
+                           </p>
+                        </div>
+                        <div class="block-social">
+                           <ul id="social-follow" class="collapse">
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#" id="goToTop" title="Back to top" class=""> <i class="material-icons arrow-up"></i></a>
+                  <div class="wdcookie">
+                     <div class="cookie_style1 wdcookie">
+                        <div id="wd_cookie_message" class="wd-global-notice cookie-message">
+                           <div class="wd-global-inner container">
+                              <div class="wd-cookie-inner"><span>Ao continuar a usar este site, você concorda com os <a href="assets//content/3-terms-and-conditions-of-use"><strong>Política de Privacidade</strong></a> e nosso uso de cookies.</span>
+                                 <button class="button" onclick="closeWdCookie()"><span><span>Aceitar</span></span></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="newsletter-pop">
+                     <script type="text/javascript">
+                        var wd_coupon_url = "assets/modules/wdpopupnewsletter";
+                        var cookies_time = 864000;
+                     </script>
+                     <div id="overlay" style="display: none;" onclick="closeDialog(cookies_time)"></div>
+                     <div class="wd-popup" style="display: none;">
+                        <div class="wd-popup-close">
+                           <a class="wd_close" href="javascript:void(0)" onclick="closeDialog(cookies_time)">
+                           <i class="material-icons">close</i>
+                           </a>
+                        </div>
+                        <div class="inner">
+                           <div class="wdnewslatterpopup-img col-sm-5">
+                              <img src="assets/modules/wdpopupnewsletter/views/img/coupon-1-1.jpg" class="img" alt="bg-img" width="315" height="460">
+                           </div>
+                           <div class="wdnewslatterpopup-content col-sm-7">
+                              <div class="newsletter_title">
+                                 <h3 class="h3 wd-title">Newsletter</h3>
+                              </div>
+                              <div class="clearfix newsletter-content">
+                                 <div class="wdContent">Subscribe and get 10% off new collection.</div>
+                              </div>
+                              <div class="newsletter-form">
+                                 <div class="g-newsletter-form">
+                                    <input class="input-email" id="input-email" type="text" name="email" size="18" placeholder="Enter your email..." value="">                    
+                                    <a onclick="regisNewsletter()" name="submitNewsletter" class="btn btn-primary button">Subscribe</a>
+                                 </div>
+                                 <div class="g-check">
+                                    <div class="checkbox">
+                                       <input id="notshow" name="notshow" type="checkbox" value="1">
+                                       Do not show this popup again
+                                    </div>
+                                 </div>
+                                 <div id="regisNewsletterMessage"></div>
+                                 <div class="block-social">
+                                    <ul id="social-follow" class="collapse">
+                                    </ul>
+                                 </div>
+                                 <div class="coupon-side clearfix">
+                                    <div class="coupon-wrapper clearfix">
+                                       <div id="coupon-element" class="coupon">
+                                          <div class="scissors"><span class="material-icons">content_cut</span></div>
+                                          <div class="dashed-border">
+                                             <span id="coupon-text-before" style="display: block;">
+                                             Coupon will be shown here</span>
+                                             <span id="coupon-text-after" style="display: none;">Voucher Code: <span>SAVE20</span></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <script type="text/javascript">
+                        var regisNewsletterMessage = 'You have just subscribled successfully!';
+                        var enterEmail = '<p class="alert alert-danger">Enter your email please!</p>';
+                     </script>
+                  </div>
+               </footer>
+            </div>
+         </div>
+      </main>
+      <script src="assets/themes/core.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/theme.js"></script>
+      <script src="assets/modules/ps_emailsubscription/views/js/ps_emailsubscription.js"></script>
+      <script src="assets/modules/blockreassurance/views/dist/front.js"></script>
+      <script src="assets/modules/wdcookie/views/js/wdcookie.js"></script>
+      <script src="assets/modules/wdspecials/views/js/wdspecials.js"></script>
+      <script src="assets/modules/wdcategoryfeature/views/js/wdcategoryfeature.js"></script>
+      <script src="assets/modules/wdpopupnewsletter/views/js/wdpopupnewsletter.js"></script>
+      <script src="assets/modules/wdproductcountdown/views/js/underscore.min.js"></script>
+      <script src="assets/modules/wdproductcountdown/views/js/jquery.countdown.min.js"></script>
+      <script src="assets/modules/wdproductcountdown/views/js/front.js"></script>
+      <script src="assets/modules/wdhorizontalmenu/views/js/front.js"></script>
+      <script src="assets/js/jquery/ui/jquery-ui.min.js"></script>
+      <script src="assets/modules/ps_imageslider/js/responsiveslides.min.js"></script>
+      <script src="assets/modules/ps_imageslider/js/homeslider.js"></script>
+      <script src="assets/modules/wdcompare/views/js/products-comparison.js"></script>
+      <script src="assets/modules/wdproductwishlist/views/js/ajax-wishlist.js"></script>
+      <script src="assets/modules/wdproductcomments/views/js/jquery.textareaCounter.plugin.js"></script>
+      <script src="assets/modules/wdproductcomments/views/js/wdproductcomments.js"></script>
+      <script src="assets/modules/wdproductcomments/views/js/jquery.rating.pack.js"></script>
+      <script src="assets/modules/wdimageslider/views/js/jquery.flexslider-min.js"></script>
+      <script src="assets/modules/smartblog/views/js/smartblog.js"></script>
+      <script src="assets/modules/wdcmsparallax/views/js/parallax.js"></script>
+      <script src="assets/themes/WDGTM015_style/modules/ps_searchbar/ps_searchbar.js"></script>
+      <script src="assets/themes/WDGTM015_style/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
+      <script src="assets/modules/wdcmsparallax/views/js/wdcmsparallax.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/owl.carousel.min.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/inview.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/jquery.cookie.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/ResizeSensor.min.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/lightbox-2.6.min.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/theia-sticky-sidebar.min.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/jquery.zoom.min.js"></script>
+      <script src="assets/themes/WDGTM015_style/assets/js/custom.js"></script>
+      <div id="wdcompare-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <div class="modal-msg"></div>
+               </div>
+               <div class="modal-footer"></div>
+            </div>
+         </div>
       </div>
-
-      <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-light navbar-light ">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Brand</a>
-
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <!-- Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <a class="dropdown-item" href="#">Action</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
-
-      </ul>
-
-      <!-- Icons -->
-      <ul class="navbar-nav d-flex flex-row me-1">
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-
-
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>  
-</body>
+      <div id="wdwishlist-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons">close</i></span></button>
+                  <div class="modal-msg"></div>
+               </div>
+               <div class="modal-footer"></div>
+            </div>
+         </div>
+      </div>
+      <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+      <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+   </body>
 </html>

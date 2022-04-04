@@ -1,0 +1,95 @@
+
+#wdcmsrightservices {
+	float: right;
+	width: 100%;
+	padding: 0 0 20px;
+}
+#wdcmsrightservices .product-sevices {
+	background: #f1f4fa;
+	padding: 20px 15px;
+	float: right;
+	width: 100%;
+}
+#wdcmsrightservices .product-sevices .wdproduct-sevices {
+	margin: 0;
+}
+#wdcmsrightservices .product-sevices .wdservice .service-title {
+	font: 400 13px/24px var(--primary-font);
+	color: #111111;
+}
+#wdcmsrightservices .wdservice .service-icon {
+	height: 42px;
+	width: 42px;
+	transition: all 600ms ease-in-out 0s;
+	-webkit-transition: all 600ms ease-in-out 0s;
+	-moz-transition: all 600ms ease-in-out 0s;
+	-o-transition: all 600ms ease-in-out 0s;
+	-ms-transition: all 600ms ease-in-out 0s;
+	float: right;
+	flex-shrink: 0;
+}
+#wdcmsrightservices .product-sevices .wdservice {
+	display: flex;
+	align-items: center;
+}
+#wdcmsrightservices .wdservice .wdservice-desc {
+	padding: 0 10px 0 0;
+}
+#wdcmsrightservices .product-sevices .wdproduct-sevices {
+	margin: 0;
+}
+#wdcmsrightservices .product-sevices .wdproduct-sevices > li {
+	float: right;
+	width: 100%;
+	margin: 10px 0;
+}
+#wdcmsrightservices .wd-return.wdservice .service-icon {
+	background: url('../../../../assets/img/product-services.png') repeat scroll -25px -18px;
+}
+#wdcmsrightservices .wd-secure.wdservice .service-icon{
+	background: url('../../../../assets/img/product-services.png') repeat scroll -25px -107px;
+}
+#wdcmsrightservices .wd-support.wdservice .service-icon{
+	background: url('../../../../assets/img/product-services.png') repeat scroll -25px -188px;
+}
+#wdcmsrightservices .wd-shop.wdservice .service-icon{
+	background: url('../../../../assets/img/product-services.png') repeat scroll -25px -277px;
+}
+#wdcmsrightservices .wd-return.wdservice:hover .service-icon {
+	background-position: -109px -18px;
+}
+#wdcmsrightservices .wd-secure.wdservice:hover .service-icon{
+	background-position: -109px -107px;
+}
+#wdcmsrightservices .wd-support.wdservice:hover .service-icon{
+	background-position: -109px -188px;
+}
+#wdcmsrightservices .wd-shop.wdservice:hover .service-icon{
+	background-position: -109px -277px;
+}
+
+
+
+@media(max-width:1499px) {
+	#wdcmsrightservices .wdservice .wdservice-desc {
+		padding: 0 10px 0 0;
+	}
+	#wdcmsrightservices .product-sevices .wdservice .service-title{
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+}
+
+@media(max-width:1199px) {
+	#wdcmsrightservices .product-sevices .wdservice .service-title {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+
+@media(max-width:991px) {
+	#wdcmsrightservices {
+		max-width: 280px;
+	}
+}

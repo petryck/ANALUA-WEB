@@ -1,0 +1,19 @@
+.wdspecial-products {
+	float: right;
+	width: 100%;
+	padding: 0;
+	margin: 45px 0 15px;
+}
+.wdspecial-products .wdspecial-inner {
+	position: relative;
+}
+@media (max-width:991px) {
+	.wdspecial-products {
+		margin:30px 0;
+	}
+	}
+@media (max-width:543px) {
+.wdspecial-products {
+	margin:15px 0;
+}
+}

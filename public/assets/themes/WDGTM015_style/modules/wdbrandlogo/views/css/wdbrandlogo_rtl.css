@@ -1,0 +1,127 @@
+/*------------ Start WD -Brandlogo ---------------*/
+.brands {
+	display: inline-block;
+	float: none;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	vertical-align: top;
+	margin:35px 0 0;
+}
+.brands .products .owl-stage-outer {
+    padding: 0;
+}
+.brands .products {
+	float: right;
+	width: 100%;
+	position: relative;
+}
+.brands .wd-titletab {
+	display: none;
+}
+.brands .customNavigation a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 30px;
+	width: 30px;
+	z-index: 1;
+	opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	-webkit-opacity: 0;
+}
+.brands .products:hover .customNavigation a {
+    opacity: 1;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	-webkit-opacity: 1;
+}
+.brands .customNavigation a.prev {
+	right: 0;
+}
+.brands .customNavigation a.next {
+	left: 0;
+}
+.brands .customNavigation a::before {
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.brands .brand-image {
+	text-align: center;
+	float: none;
+	width: auto;
+	display: inline-block;
+	vertical-align: top;
+    padding: 0 43px;
+}
+.brands .products-section-title a {
+    color: #111111;
+}
+.brands #wdbrandlogo-carousel {
+    float: right;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.brands #wdbrandlogo-carousel li {
+    float: right;
+    padding:0;
+    text-align: center;
+    width: 100% !important;
+}
+.brands #wdbrandlogo-carousel li .brand-image img {
+    max-width: 100%;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -webkit-opacity: 0.6;
+    transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    -ms-transition: all 500ms ease 0s;
+    width: auto;
+}
+.brands #wdbrandlogo-carousel li:hover .brand-image img {
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+}
+@media (max-width:1200px) {
+.brands .brand-image {
+	padding: 0 28px;
+}
+.brands {
+	margin: 15px 0 0;
+}
+}
+@media (max-width:991px) {
+	.brands {
+		margin: 25px 0 0;
+	}
+}
+@media (max-width: 767px) {
+    .brands {
+        margin: 15px 0 0;
+    }
+	.brands .customNavigation a{
+		opacity:1;
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		-webkit-opacity: 1;
+	}
+}
+@media (max-width: 543px) {
+    .brands #wdbrandlogo-carousel .owl-nav div {
+        bottom: 40px;
+    }
+    .brands .brand-image {
+        padding: 0 20px;
+    }
+}
+/*------------ End WD -Brandlogo ---------------*/

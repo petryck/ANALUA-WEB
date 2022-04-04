@@ -1,0 +1,107 @@
+#wdcmsoffer {
+	float: left;
+	width: 100%;
+	background: var(--secondary-bg-color);
+	margin: 0 0 45px;
+}
+#wdcmsoffer .wdcmsoffer .offer-title {
+	font: 300 30px/34px var(--primary-font);
+	color: var(--secondary-color);
+	padding: 0 0 5px;
+}
+#wdcmsoffer .wdcmsoffer .offer-desc {
+	font: 400 14px/24px var(--primary-font);
+	color: var(--secondary-color);
+	letter-spacing: 0.8px;
+}
+#wdcmsoffer .wdcmsoffer {
+	display: flex;
+	align-items: center;
+	padding: 45px 120px;
+	justify-content: space-between;
+}
+#wdcmsoffer .wdcmsoffer .offer-btn a {
+	vertical-align: top;
+}
+#wdcmsoffer .wdcmsoffer .offer-content {
+	background: url(../../../../assets/img/offer-icon.png) no-repeat left center;
+	padding-left: 65px;
+}
+#wdcmsoffer .wdcmsoffer .offer-title span {
+	font-weight: 600;
+	color: var(--primary-bg-color);
+}
+#wdcmsoffer .wdcmsoffer .btn-primary:hover {
+	background: #fff;
+	color: #111;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+#wdcmsoffer .wdcmsoffer {
+	padding: 45px 50px;
+}
+#wdcmsoffer .wdcmsoffer .offer-title{
+	font-size: 26px;
+	line-height: 30px;
+}
+}
+
+@media (max-width: 991px){
+	#wdcmsoffer{
+		margin: 0 0 30px;
+	}
+#wdcmsoffer .wdcmsoffer {
+	padding: 25px 20px;
+}
+#wdcmsoffer .wdcmsoffer .offer-title {
+	font-size: 20px;
+	line-height: 24px;
+}
+#wdcmsoffer .wdcmsoffer .offer-desc{
+	font-size: 12px;
+	line-height: 22px;
+}
+}
+
+@media (max-width: 730px){
+#wdcmsoffer .wdcmsoffer .offer-content {
+	padding-left: 38px;
+	background-size: 30px;
+}
+#wdcmsoffer .wdcmsoffer .offer-title {
+	font-size: 14px;
+	line-height: 18px;
+}
+#wdcmsoffer .wdcmsoffer .offer-desc {
+	font-size: 10px;
+	line-height: 20px;
+}
+#wdcmsoffer .wdcmsoffer .offer-btn a {
+	font-size: 12px;
+	padding: 10px 24px;
+}
+}
+
+@media (max-width: 543px){
+	#wdcmsoffer .wdcmsoffer {
+		padding: 15px 10px;
+		display: block;
+	}
+#wdcmsoffer .wdcmsoffer .offer-content {
+	padding: 0 0 10px;
+	background: none;
+}
+#wdcmsoffer .wdcmsoffer .offer-title {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0 0 10px;
+}
+#wdcmsoffer .wdcmsoffer .offer-desc {
+	font-size: 12px;
+	line-height: 20px;
+}
+#wdcmsoffer {
+	margin: 15px 0;
+}
+
+}

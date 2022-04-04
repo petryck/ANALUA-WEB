@@ -1,0 +1,116 @@
+
+
+
+.wishlist_default .is_wish_list_default{
+    margin:0;
+}
+#mywishlist .table-responsive {
+	z-index: 0;
+	position: relative;
+}
+#module-blockwishlist-mywishlist .page-content {
+    padding: 0;
+    border: none;
+}
+#module-wdproductwishlist-mywishlist th {
+    text-align: right;
+}
+.footer_link {
+    margin: 0 0 40px 0;
+}
+#mywishlist .products {
+	float: right;
+	width: 100%;
+}
+#mywishlist #products {
+	float: right;
+	width: 100%;
+	margin: 20px 0 30px;
+}
+#mywishlist .thumbnail-container {
+	margin: 0;
+}
+#mywishlist .products .product-miniature {
+	width: 20%;
+}
+#mywishlist #products .product-price-and-shipping > span.discount-product {
+	font: 600 10px/20px var(--primary-font);
+	border-radius: 0;
+}
+#mywishlist .product-title a {
+	font: 600 14px/22px var(--primary-font);
+	color: #111111;
+}
+#mywishlist .wishlistLinkTop #showSendWishlist {
+    float: right;
+    margin: 0 0 10px;
+    width: 100%;
+}
+#mywishlist .product-price-and-shipping, #mywishlist .product-title {
+	float: right;
+	width: 100%;
+}
+#wdsendwishlist-modal .modal-title {
+	font: 400 16px/20px var(--secondary-font);
+	color: #111111;
+}
+@media (min-width: 1200px) {
+    .header-wishtlist .wishtlist_top {
+        height: 40px;
+        width: 40px;
+        float: right;
+        position: relative;
+    }
+    .header-wishtlist {
+        float: left;
+        padding: 30px 0;
+        margin: 0 5px;
+    }
+    .header-wishtlist .wishtlist_top > span {
+        font-size: 0;
+    }
+    .header-wishtlist .wishtlist_top > span .cart-wishlist-number {
+        font-size: 11px;
+		position: absolute;
+		left: -6px;
+		top: -5px;
+		font-weight: 400;
+		color: var(--primary-color);
+		background: var(--primary-bg-color);
+		height: 18px;
+		width: 18px;
+		line-height: 18px;
+		border-radius: 50%;
+		text-align: center;
+    }
+    .header-wishtlist .wishtlist_top::after {
+        content: '';
+        font-size: 0;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background:url(../../../../assets/img/sprite.png) -81px -154px no-repeat;
+        height: 100%;
+        transition: all 600ms ease-in-out 0s;
+        -webkit-transition: all 600ms ease-in-out 0s;
+        -moz-transition: all 600ms ease-in-out 0s;
+        -o-transition: all 600ms ease-in-out 0s;
+        -ms-transition: all 600ms ease-in-out 0s;
+    }
+    .header-wishtlist .wishtlist_top:hover::after {
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+    }
+}
+@media (max-width: 1199px){
+    .header-wishtlist {
+        padding:0;
+    }
+    }

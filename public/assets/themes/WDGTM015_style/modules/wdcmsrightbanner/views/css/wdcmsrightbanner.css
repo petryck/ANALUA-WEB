@@ -1,0 +1,11 @@
+#wdcmsrightbanner {
+	float: left;
+	width: 100%;
+}
+@media (max-width: 991px) and (min-width: 544px) {
+#wdcmsrightbanner {
+	float: left;
+	width: 190px;
+	margin-left: 20px;
+}
+}

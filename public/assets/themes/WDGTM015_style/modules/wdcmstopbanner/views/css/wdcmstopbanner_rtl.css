@@ -1,0 +1,188 @@
+#wdcmstopbanner {
+	float: right;
+	width: 100%;
+	margin: 0 0 45px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .title {
+	font: 400 16px/24px var(--primary-font);
+	text-transform: capitalize;
+	color: #111111;
+	margin: 0 0 20px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .subtitle {
+	font: 600 24px/30px var(--primary-font);
+	text-transform: capitalize;
+	color: #111111;
+	margin: 0 0 15px;
+	width: 80%;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .label {
+	background: #ffffff;
+	display: inline-block;
+	font: 400 14px/24px var(--primary-font);
+	color: #111111;
+	text-transform: capitalize;
+	padding: 0 12px;
+	border-radius: 5px;
+	margin: 0 0 12px;
+}
+#wdcmstopbanner .wdtopbanner .wdright-banner-content {
+	float: right;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	text-align: right;
+	position: absolute;
+	right: 30px;
+	left: 30px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .offer a {
+	display: inline-block;
+	font: 600 14px/20px var(--primary-font);
+	text-transform: capitalize;
+	background: var(--secondary-btn-bg-color);
+	color: var(--secondary-btn-color);
+	padding: 9px 20px;
+	position: relative;
+	vertical-align: top;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .offer a:hover {
+	background: var(--primary-btn-bg-color);
+	color: var(--primary-btn-color);
+}
+#wdcmstopbanner .wdtopbanner .wdright-banner-content > a {
+	display: block;
+	overflow: hidden;
+}
+#wdcmstopbanner .wdtopbanner-img2.wdtopbanner .wdtopbanner-content .title {
+	color: #111;
+}
+#wdcmstopbanner .wdtopbanner-img2.wdtopbanner .wdtopbanner-content .subtitle {
+	color: #111;
+}
+#wdcmstopbanner .wdtopbanner:hover .wdright-banner-content > a img {
+	transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+}
+#wdcmstopbanner .wdtopbanner .wdright-banner-content > a img {
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out 0s;
+	-moz-transition: all 300ms ease-in-out 0s;
+	-o-transition: all 300ms ease-in-out 0s;
+	-ms-transition: all 300ms ease-in-out 0s;
+}
+@media (max-width:1199px) {
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	right: 20px;
+	left: 0;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .title{
+	font-size: 14px;
+	line-height: 18px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .subtitle{
+	font-size: 20px;
+	line-height: 24px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .offer a{
+	font-size: 12px;
+	line-height: 18px;
+	padding: 9px 18px;
+}
+}
+@media (max-width:991px) {
+	#wdcmstopbanner {
+		margin: 0 0 30px;
+	}
+}
+@media (max-width:991px) and (min-width:734px) {
+
+#wdcmstopbanner .wdcmstopbanner .wdtopbanner {
+	padding: 0 10px;
+}
+#wdcmstopbanner .wdcmstopbanner {
+	margin: 0 -10px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .label {
+	font-size: 10px;
+	line-height: 18px;
+	padding: 0 8px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .title {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0 0 10px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .subtitle {
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 10px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .offer a {
+	font-size: 11px;
+	line-height: 16px;
+	padding: 6px 12px;
+}
+}
+@media(max-width:735px) and (min-width:544px) {
+	#wdcmstopbanner .wdtopbanner .wdtopbanner-content .label {
+	font-size: 8px;
+	line-height: 16px;
+	padding: 0 8px;
+	margin: 0 0 5px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .title {
+	font-size: 10px;
+	line-height: 14px;
+	margin: 0 0 2px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .subtitle {
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 5px;
+	width: 90%;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content .offer a {
+	font-size: 10px;
+	line-height: 14px;
+	padding: 5px 10px;
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	right: 10px;
+	left: 0;
+}
+}
+
+@media(max-width:543px){
+#wdcmstopbanner .wdtopbanner {
+	margin: 0 0 15px;
+}
+#wdcmstopbanner .wdtopbanner-img3.wdtopbanner {
+	margin: 0;
+}
+#wdcmstopbanner {
+	margin: 0 0 15px;
+}
+}
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	text-align: left;
+	direction: ltr;
+}
+@media (max-width:1199px) {
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	left: 20px;
+	right: 0;
+}
+}
+@media(max-width:735px) and (min-width:544px) {
+#wdcmstopbanner .wdtopbanner .wdtopbanner-content {
+	left: 10px;
+	right: 0;
+}
+}
