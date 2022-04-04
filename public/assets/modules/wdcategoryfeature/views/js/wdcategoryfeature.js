@@ -89,13 +89,27 @@ $(document).ready(function() {
 
 $('.owl-carousel').owlCarousel({
     center: true,
-    items:2,
+    items:6,
     loop:true,
-    margin:10,
     responsive:{
-        600:{
-            items:4
-        }
+        0:{
+			items:1
+		},
+		320:{
+			items:3
+		},
+		544:{
+			items:3
+		},
+		992:{
+			items:4
+		},
+		1200:{
+			items:5
+		},
+		1500:{
+			items:6
+		}
     }
 });
 // owl.on('mousewheel', '.owl-stage', function (e) {
