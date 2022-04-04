@@ -3,9 +3,9 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   devtool: 'eval-cheap-source-map',
-  entry: './client/client.js',
+  entry: './public/assets/js/controller.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'client')
+    path: path.resolve(__dirname, '../public/assets/js')
   }
 }

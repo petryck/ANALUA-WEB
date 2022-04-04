@@ -2,11 +2,27 @@
   "name": "analua-web",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "npm-run-all --parallel dev:*",
+    "pm2": "pm2 start src/server.js --watch=true --name ANALUA-WEB",
+    "dev:webpack": "webpack -c webpack.config.cjs --watch",
+    "dev:nodemon": "nodemon --delay 500ms src/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "http": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
