@@ -30,7 +30,7 @@ $(document).ready(function(){
 				items : 5, //1 items above 1000px browser width
 				nav : false,
 				dots : false,
-				loop: true,
+				loop: false,
 				autoplay:false,	
 				rtl:false,
 				responsive: {

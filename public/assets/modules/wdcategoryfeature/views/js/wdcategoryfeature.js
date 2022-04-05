@@ -49,13 +49,15 @@ $(document).ready(function() {
         }
     }
 	});
+
+
 // Custom Navigation Events
-$(".wdcategoryfeature_next").click(function(){
-	wdcategoryfeature.trigger('next.owl.carousel',[700]);
-})
-$(".wdcategoryfeature_prev").click(function(){
-	 wdcategoryfeature.trigger('prev.owl.carousel',[700]);
-})
+// $(".wdcategoryfeature_next").click(function(){
+// 	wdcategoryfeature.trigger('next.owl.carousel',[700]);
+// })
+// $(".wdcategoryfeature_prev").click(function(){
+// 	 wdcategoryfeature.trigger('prev.owl.carousel',[700]);
+// })
 
 
 

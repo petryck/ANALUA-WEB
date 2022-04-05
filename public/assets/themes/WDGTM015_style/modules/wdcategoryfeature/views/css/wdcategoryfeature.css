@@ -206,11 +206,11 @@
 	-ms-transition: all 400ms ease-in-out;
 	overflow: hidden;
 	border-radius: 50%;
-	/* width: 80px; */
+	width: 80px;
 	flex-shrink: 0;
 }
 .wd_category_feature #wd_cat_featured .item:hover .cat-img a img {
-	transform: rotateY(360deg);
+	/* transform: rotateY(360deg); */
 }
 
 @media (max-width:991px) {
