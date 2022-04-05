@@ -26,42 +26,36 @@
 $(document).ready(function() {
 
     /* ----------- Start Carousel For Topcategories  ----------- */
-	// var wdcategoryfeature = $('#wd_cat_featured').owlCarousel({
-	// 	items : 6, //1 items above 1000px browser width
-	// 	nav : true,
-	// 	loop: true,
-	// 	// autoplay:true,	
-	// 	// onmouseover: true,
-	// 	// autoplaySpeed: 700,
-	// 	// smartSpeed:450,
-	// 	responsive: {
-	// 		0:{
-	// 			items:1
-	// 		},
-	// 		320:{
-	// 			items:3
-	// 		},
-	// 		544:{
-	// 			items:3
-	// 		},
-	// 		992:{
-	// 			items:4
-	// 		},
-	// 		1200:{
-	// 			items:5
-	// 		},
-	// 		1500:{
-	// 			items:6
-	// 		}
-	// 	}
-	// });
-// // Custom Navigation Events
-// $(".wdcategoryfeature_next").click(function(){
-// 	wdcategoryfeature.trigger('next.owl.carousel',[700]);
-// })
-// $(".wdcategoryfeature_prev").click(function(){
-// 	 wdcategoryfeature.trigger('prev.owl.carousel',[700]);
-// })
+	var wdcategoryfeature = $('#wd_cat_featured').owlCarousel({
+		items : 5, //1 items above 1000px browser width
+		// nav : true,
+		loop: true,
+		// autoplay:true,	
+		onmouseover: true,
+		// autoplaySpeed: 700,
+		// smartSpeed:450,
+    responsive:{
+        0:{
+            items:4
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        },
+		1400:{
+            items:5
+        }
+    }
+	});
+// Custom Navigation Events
+$(".wdcategoryfeature_next").click(function(){
+	wdcategoryfeature.trigger('next.owl.carousel',[700]);
+})
+$(".wdcategoryfeature_prev").click(function(){
+	 wdcategoryfeature.trigger('prev.owl.carousel',[700]);
+})
 
 
 
@@ -69,49 +63,25 @@ $(document).ready(function() {
 // owl.owlCarousel({
 //     loop:true,
 //     nav:true,
-//     margin:10,
+//     margin:10
+// });
+
+
+// $('.owl-carousel').owlCarousel({
+// 	items:5,
+//     loop:true,
 //     responsive:{
 //         0:{
 //             items:1
 //         },
 //         600:{
 //             items:3
-//         },            
-//         960:{
-//             items:5
 //         },
-//         1200:{
-//             items:6
+//         1000:{
+//             items:5
 //         }
 //     }
 // });
-
-
-$('.owl-carousel').owlCarousel({
-    center: true,
-    items:6,
-    loop:true,
-    responsive:{
-        0:{
-			items:1
-		},
-		320:{
-			items:3
-		},
-		544:{
-			items:3
-		},
-		992:{
-			items:4
-		},
-		1200:{
-			items:5
-		},
-		1500:{
-			items:6
-		}
-    }
-});
 // owl.on('mousewheel', '.owl-stage', function (e) {
 //     if (e.deltaY>0) {
 //         owl.trigger('next.owl');

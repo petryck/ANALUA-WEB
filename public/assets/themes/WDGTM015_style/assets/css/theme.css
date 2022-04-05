@@ -14309,13 +14309,13 @@ li.product-flag.on-sale {
 	display: none;
 }
 #newslatter .block_newsletter .block_content .btn {
-	background: var(--secondary-btn-bg-color);
+	background: #222222;
 	color: var(--secondary-btn-color);
 	font: 500 14px/16px var(--primary-font);
 	height: 44px;
 	padding: 5px 20px;
 	position: absolute;
-	right: 0;
+	right: -3px;
 	top: 0;
 	bottom: 0;
 	margin: auto;
@@ -14329,7 +14329,7 @@ li.product-flag.on-sale {
 	margin: 0 0 10px;
 }
 #newslatter .block_newsletter .block_content .wdinput_newsletter .btn:focus, #newslatter .block_newsletter .block_content .wdinput_newsletter .btn:hover {
-	background: rgba(0,0,0,0.7);
+	background: #222222;
 	color: #fff;
 }
 #newslatter .block_newsletter .wd-content {
@@ -15348,7 +15348,7 @@ li.product-flag.on-sale {
 	float: left;
 	width: 100%;
 	padding: 48px 0;
-	background: var(--primary-bg-color);
+	background: #111111;
 }
 
 #index .footer-top {
@@ -16959,12 +16959,20 @@ body#checkout .modal-content {
 
 @media(min-width: 1200px) {
 	#header {
-		min-height: 144px;
+		min-height: 100px;
 		float: left;
 		width: 100%;
 	}
 	
 }
+
+@media(max-width: 400px) {
+	.footer-container, .footer-top{
+		display: none;
+	}
+}
+
+
 
 @media(max-width: 1200px) {
 	#index .columns_inner.container {
@@ -18076,6 +18084,8 @@ body#checkout .modal-content {
 	#notifications,
 	#wrapper,
 	#footer {
+		/* bottom: 0;
+		position: absolute; */
 		display: block!important;
 	}
 

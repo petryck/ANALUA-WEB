@@ -157,7 +157,7 @@
 	position: relative;
 }
 .wd_category_feature .cat-img a img {
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	transition: all 600ms ease-in-out 0s;
 	-webkit-transition: all 600ms ease-in-out 0s;
 	-moz-transition: all 600ms ease-in-out 0s;

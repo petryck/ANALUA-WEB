@@ -14,6 +14,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './public/assets/js/controller.js',
   devtool: 'eval-cheap-source-map',
   output: {
