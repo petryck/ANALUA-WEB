@@ -4,7 +4,9 @@
 	position: relative;
 	width: 100%;
 	margin: 0;
+	
 	padding: 20px 0;
+	padding-bottom: 0;
 }
 .wd_category_feature .wd-titletab {
 	display: none;
@@ -136,7 +138,7 @@
     margin-bottom: 15px;
 }
 #wd_cat_featured .content .title a {
-	font: 600 13px/17px var(--secondary-font);
+	font: 600 11px/11px var(--secondary-font);
 	margin: 0;
 	position: relative;
 	text-transform: capitalize;
@@ -215,7 +217,7 @@
 
 @media (max-width:991px) {
 	#wd_cat_featured .content .title a {
-		font-size: 13px;
+		font-size: 11px;
 		line-height: 16px;
 	}
 	#wd_category_feature #wd_cat_featured .item .content .wdcat-content {

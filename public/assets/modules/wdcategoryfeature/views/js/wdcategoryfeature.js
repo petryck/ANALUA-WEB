@@ -36,10 +36,10 @@ $(document).ready(function() {
 		// smartSpeed:450,
     responsive:{
         0:{
-            items:4
+            items:5
         },
         600:{
-            items:4
+            items:5
         },
         1000:{
             items:5
