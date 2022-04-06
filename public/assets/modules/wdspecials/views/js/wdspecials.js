@@ -26,43 +26,43 @@
 $(document).ready(function(){
     /* ----------- carousel For wdspecial ----------- */
 
-				var wdspecial = $('.wdspecial-products .products').owlCarousel({
-				items : 5, //1 items above 1000px browser width
-				nav : false,
-				dots : false,
-				loop: false,
-				autoplay:false,	
-				rtl:false,
-				responsive: {
-					0:{
-						items:1
-					},
-					320:{
-						items:2
-					},
-					544:{
-						items:3
-					},
-					768:{
-						items:3
-					},
-					1200:{
-						items:4
-					},
-					1500:{
-						items:5
-					}
-				}
+	// 			var wdspecial = $('.wdspecial-products .products').owlCarousel({
+	// 			items : 5, //1 items above 1000px browser width
+	// 			nav : false,
+	// 			dots : false,
+	// 			loop: false,
+	// 			autoplay:false,	
+	// 			rtl:false,
+	// 			responsive: {
+	// 				0:{
+	// 					items:1
+	// 				},
+	// 				320:{
+	// 					items:2
+	// 				},
+	// 				544:{
+	// 					items:3
+	// 				},
+	// 				768:{
+	// 					items:3
+	// 				},
+	// 				1200:{
+	// 					items:4
+	// 				},
+	// 				1500:{
+	// 					items:5
+	// 				}
+	// 			}
 
-			});
+	// 		});
 
-		// Custom Navigation Events
-      $(".wdspecial_prev").click(function(){
-			wdspecial.trigger('prev.owl.carousel',[700]);
-	  })
-	  $(".wdspecial_next").click(function(){
-		 	wdspecial.trigger('next.owl.carousel',[700]);
-	  })
+	// 	// Custom Navigation Events
+    //   $(".wdspecial_prev").click(function(){
+	// 		wdspecial.trigger('prev.owl.carousel',[700]);
+	//   })
+	//   $(".wdspecial_next").click(function(){
+	// 	 	wdspecial.trigger('next.owl.carousel',[700]);
+	//   })
 	  
 
 });
