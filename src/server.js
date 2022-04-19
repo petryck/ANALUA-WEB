@@ -13,7 +13,7 @@ import ejs from 'ejs';
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
-const port = 3030
+const port = 3266
 
 app.use(cors())
 // app.use(bodyParser.json());
